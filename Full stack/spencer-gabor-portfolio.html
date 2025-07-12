@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spencer Gabor - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .location {
+            font-size: 12px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #666;
+            margin-bottom: 40px;
+        }
+
+        .name {
+            font-size: 4rem;
+            font-weight: bold;
+            letter-spacing: 3px;
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        .portfolio-cards {
+            position: relative;
+            height: 200px;
+            margin: 40px 0 80px 0;
+        }
+
+        .card {
+            position: absolute;
+            width: 160px;
+            height: 100px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px) scale(1.02);
+        }
+
+        .card.green {
+            background: linear-gradient(135deg, #2E8B57, #228B22);
+            left: -120px;
+            top: 20px;
+            transform: rotate(-8deg);
+            z-index: 1;
+        }
+
+        .card.blue {
+            background: linear-gradient(135deg, #4169E1, #1E90FF);
+            left: -40px;
+            top: -10px;
+            transform: rotate(3deg);
+            z-index: 4;
+        }
+
+        .card.lime {
+            background: linear-gradient(135deg, #9ACD32, #7CFC00);
+            left: 40px;
+            top: 15px;
+            transform: rotate(-5deg);
+            z-index: 3;
+        }
+
+        .card.pink {
+            background: linear-gradient(135deg, #FF69B4, #FF1493);
+            left: 120px;
+            top: 35px;
+            transform: rotate(8deg);
+            z-index: 2;
+        }
+
+        .card-content {
+            padding: 15px;
+            font-size: 12px;
+            line-height: 1.2;
+        }
+
+        .title {
+            font-size: 4.5rem;
+            font-weight: 300;
+            color: #d0d0d0;
+            margin-bottom: 0;
+            letter-spacing: 12px;
+            text-transform: uppercase;
+            line-height: 1;
+        }
+
+        .subtitle {
+            font-size: 4.5rem;
+            font-weight: bold;
+            color: #888;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+            margin-bottom: 80px;
+            line-height: 1;
+        }
+
+        .clients {
+            font-size: 12px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            .name {
+                font-size: 2.5rem;
+            }
+
+            .portfolio-cards {
+                height: 150px;
+                margin: 30px 0 60px 0;
+            }
+
+            .card {
+                width: 120px;
+                height: 80px;
+                position: relative;
+                left: auto !important;
+                top: auto !important;
+                transform: none !important;
+                margin: 0 5px;
+            }
+
+            .card.green { transform: rotate(-5deg) !important; }
+            .card.blue { transform: rotate(2deg) !important; }
+            .card.lime { transform: rotate(-3deg) !important; }
+            .card.pink { transform: rotate(5deg) !important; }
+
+            .title {
+                font-size: 2.5rem;
+                letter-spacing: 4px;
+            }
+
+            .subtitle {
+                font-size: 2.5rem;
+                letter-spacing: 3px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .name {
+                font-size: 2rem;
+            }
+
+            .card {
+                width: 100px;
+                height: 70px;
+            }
+
+            .title {
+                font-size: 2rem;
+                letter-spacing: 2px;
+            }
+
+            .subtitle {
+                font-size: 2rem;
+                letter-spacing: 2px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="location">BROOKLYN, NEW YORK</div>
+        
+        <h1 class="name">SPENCER GABOR</h1>
+        
+        <div class="portfolio-cards">
+            <div class="card green">
+                <div class="card-content">
+                    <div style="font-size: 10px; font-weight: bold;">CREATIVE</div>
+                    <div style="font-size: 10px; font-weight: bold;">PORTFOLIO</div>
+                </div>
+            </div>
+
+            <div class="card blue">
+                <div class="card-content">
+                    <div style="font-size: 32px; font-weight: bold;">SG</div>
+                </div>
+            </div>
+
+            <div class="card lime">
+                <div class="card-content">
+                    <div style="font-size: 10px; font-weight: bold;">GRAPHIC</div>
+                    <div style="font-size: 10px; font-weight: bold;">DESIGN</div>
+                </div>
+            </div>
+
+            <div class="card pink">
+                <div class="card-content">
+                    <div style="font-size: 9px; line-height: 1.1;">Work. Play.</div>
+                    <div style="font-size: 9px; line-height: 1.1;">Sleep. Relax. Eat.</div>
+                </div>
+            </div>
+        </div>
+        
+        <h2 class="title">ILLUSTRATOR,</h2>
+        <h2 class="subtitle">DESIGNER & MURALIST</h2>
+        
+        <div class="clients">CLIENTS INCLUDE</div>
+    </div>
+</body>
+</html>
